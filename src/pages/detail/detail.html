@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Chi tiết</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+	<ion-item *ngFor="let d of detail">
+		<div class="title-style">{{d.title}}</div>
+		<div class="content-style">{{d.summary}}</div>
+		<div class="content" [innerHTML]="d.content"></div>
+	</ion-item>
+</ion-content>

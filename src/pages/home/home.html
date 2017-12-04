@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Trang Chủ</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+	<ion-list>
+	   <ion-item *ngFor="let item of items">
+			<p class="title-style" (click)="goToDetail(item)">{{item.title}}</p>
+			<img style="contain: inherit; width:100%;" src="{{item.picture}}" (click)="goToDetail(item)" />
+            <p class="content-style">{{item.summary}}</p>
+	   </ion-item>
+	</ion-list>
+
+	<ion-infinite-scroll (ionInfinite)="doInfinite($event)">
+	   <ion-infinite-scroll-content></ion-infinite-scroll-content>
+	</ion-infinite-scroll>
+</ion-content>

@@ -1,0 +1,46 @@
+page-detail {
+	.scroll-content{
+		padding-left:0px !important;
+		padding-right:0px !important;
+	}
+	
+	.title-style{
+		font-size:2.2rem;
+		overflow: initial;
+		white-space: initial;
+	}
+	
+	.content-style{
+		padding-top:15px;
+		overflow:hidden;
+		white-space: initial;
+	}
+	
+	.content{
+		padding-top:15px;
+		overflow:hidden;
+		white-space: initial;
+		color:#000 !important;
+	}
+	
+	.content img{
+		max-width:100%;
+		padding-top:10px;
+		padding-bottom:10px;
+	}
+	
+	.content p{
+		color:#000 !important;
+		line-height:20px;
+		padding-bottom:15px;
+	}
+	
+	.content img{
+		display: block;
+		margin: 0 auto;
+	}
+	
+	.content table{
+		max-width:100% !important;
+	}
+}
